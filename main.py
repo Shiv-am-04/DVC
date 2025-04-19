@@ -15,8 +15,14 @@ new_row = {
 
 data.loc[data.shape[0]] = new_row
 
-print(data)
+# Adding new rows to data for version v3
 
+new_rows_2 = [['Mina','Pimpri',22,70000],['Tina','Nashik',25,80000]]
+
+for row in new_rows_2:
+    data.loc[data.shape[0]] = row
+
+print(data)
 
 
 # save the changes to data
